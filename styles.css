@@ -123,6 +123,7 @@ h1 em { color: var(--green); font-weight: 600; }
 .info-icon { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid #d5ddcf; border-radius: 50%; color: var(--green); font-size: 17px; }
 .info-block h3 { margin: 2px 0 5px; font-size: 14px; }
 .info-block p { margin: 0; color: var(--muted); font-size: 12px; }
+.product-links { margin-top: 7px !important; }
 .temperature-card, .cost-card { padding: 24px 25px; border: 1px solid #e3e3d8; border-radius: 5px; background: var(--paper); }
 .temperature-heading { margin-bottom: 14px; }
 .temperature-heading h3 { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 600; }
