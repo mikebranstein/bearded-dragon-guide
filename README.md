@@ -14,4 +14,10 @@ To preview it locally, open `index.html` in a browser. The site uses plain HTML,
 
 Use **Print care routine** to print the daily, weekly, and monthly care instructions.
 
+The habitat diagram highlights each enclosure part and explains its purpose. Hover or tap a part of the picture, or use the labelled buttons below it (Tab to focus, Enter or Space to select). The explanation stays visible until another part is selected. No tracking or data storage is involved.
+
+## Checks
+
+Run `node --check script.js` and `node --test script.test.js` to check JavaScript syntax and diagram interactions.
+
 Care information is general guidance, not veterinary advice. Confirm current legal requirements and animal-care details with a reputable reptile store and an exotic-pet vet.

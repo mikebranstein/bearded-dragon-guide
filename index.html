@@ -132,76 +132,151 @@
                 <p class="eyebrow">Explore the enclosure</p>
                 <h3>What goes where?</h3>
               </div>
-              <p>Hover, focus, or tap a numbered point to learn what that part does.</p>
+              <p>Explore the picture or choose a labelled part below. Hover, tap, or use your keyboard.</p>
             </div>
+            <div class="habitat-interactive-layout">
             <div class="habitat-diagram">
-              <svg class="enclosure-art" viewBox="0 0 900 440" role="img" aria-labelledby="enclosure-title enclosure-description">
+              <svg class="enclosure-art" viewBox="0 0 900 590" role="img" aria-labelledby="enclosure-title enclosure-description">
                 <title id="enclosure-title">Cutaway diagram of a bearded dragon enclosure</title>
-                <desc id="enclosure-description">A warm basking side and cooler side with overhead heat and UVB lights, platforms, hides, climbing branches, water, and a solid floor covering.</desc>
+                <desc id="enclosure-description">A front-opening enclosure with a tiled floor, warm basking area on the left, cool area on the right, UVB tube, two hides, climbing branch, water and food bowls, thermometers and an external thermostat. Use the labelled buttons below to explore each part.</desc>
                 <defs>
-                  <linearGradient id="zone-gradient" x1="0" x2="1">
-                    <stop offset="0" stop-color="#f2bc7e" stop-opacity=".42"/>
-                    <stop offset=".48" stop-color="#f6e8cd" stop-opacity=".16"/>
-                    <stop offset="1" stop-color="#b5d3cf" stop-opacity=".42"/>
+                  <linearGradient id="zone-gradient">
+                    <stop offset="0" stop-color="#f8dfbc"/>
+                    <stop offset=".55" stop-color="#f2ead9"/>
+                    <stop offset="1" stop-color="#d8e6df"/>
                   </linearGradient>
-                  <linearGradient id="floor-gradient" x1="0" x2="1">
-                    <stop offset="0" stop-color="#d69c62"/>
-                    <stop offset=".5" stop-color="#c5a77e"/>
-                    <stop offset="1" stop-color="#8ba89d"/>
+                  <linearGradient id="sun-rays" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0" stop-color="#efac48" stop-opacity=".55"/>
+                    <stop offset="1" stop-color="#efac48" stop-opacity=".04"/>
                   </linearGradient>
-                  <linearGradient id="sun-rays" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stop-color="#f4b65f" stop-opacity=".48"/>
-                    <stop offset="1" stop-color="#f4b65f" stop-opacity="0"/>
-                  </linearGradient>
+                  <pattern id="floor-tiles" width="75" height="32" patternUnits="userSpaceOnUse" patternTransform="skewX(-25)">
+                    <rect width="75" height="32" fill="#d5c7ae"/>
+                    <path d="M0 0 H75 V32" fill="none" stroke="#faf5e9" stroke-width="2"/>
+                  </pattern>
                 </defs>
-                <rect x="74" y="58" width="752" height="326" rx="14" fill="#d2c3a9"/>
-                <rect x="88" y="72" width="724" height="298" rx="7" fill="#f8f6ed"/>
-                <rect x="96" y="94" width="708" height="260" fill="url(#zone-gradient)"/>
-                <text x="120" y="126" class="svg-zone svg-warm">WARM SIDE</text>
-                <text x="686" y="126" class="svg-zone svg-cool">COOL SIDE</text>
-                <path d="M259 133 L186 292 L338 292 Z" fill="url(#sun-rays)"/>
-                <path d="M190 99 L221 99 L237 122 L174 122 Z" fill="#3c4b3e"/>
-                <path d="M194 122 L230 122 L224 142 Q212 154 200 142 Z" fill="#e1a04d"/>
-                <path d="M207 143 L217 143 L217 155 L207 155 Z" fill="#4a5647"/>
-                <path d="M373 105 H683" stroke="#43584b" stroke-width="9" stroke-linecap="round"/>
-                <path d="M383 105 H673" stroke="#d7f0d7" stroke-width="4" stroke-linecap="round"/>
-                <path d="M96 354 H804" stroke="#69583f" stroke-width="5"/>
-                <rect x="97" y="359" width="706" height="9" rx="3" fill="url(#floor-gradient)"/>
-                <path d="M208 311 H351 L365 327 H197 Z" fill="#8d6949"/>
-                <rect x="224" y="290" width="113" height="23" rx="4" fill="#a9845b"/>
-                <path d="M222 291 H339" stroke="#c7a77e" stroke-width="5"/>
-                <path d="M388 347 C404 302 421 264 446 218 C461 190 475 171 493 153" fill="none" stroke="#86684b" stroke-width="15" stroke-linecap="round"/>
-                <path d="M430 267 C402 252 384 235 375 217 M454 225 C482 215 504 199 518 181 M474 192 C452 178 441 165 433 149" fill="none" stroke="#9a7855" stroke-width="9" stroke-linecap="round"/>
-                <path d="M164 338 V307 Q164 280 191 280 H223 Q250 280 250 307 V338 Z" fill="#b68e64"/>
-                <path d="M183 338 V310 Q183 293 204 293 Q225 293 225 310 V338" fill="#615b4b"/>
-                <path d="M650 338 V307 Q650 280 677 280 H709 Q736 280 736 307 V338 Z" fill="#a9b5a2"/>
-                <path d="M670 338 V310 Q670 293 691 293 Q712 293 712 310 V338" fill="#535f53"/>
-                <path d="M628 341 Q632 324 662 324 Q692 324 696 341 Z" fill="#7fa8aa"/>
-                <ellipse cx="662" cy="340" rx="34" ry="7" fill="#5c898b"/>
-                <path d="M750 202 V232 M740 202 H760 M740 232 H760" stroke="#53675b" stroke-width="3"/>
-                <circle cx="750" cy="190" r="13" fill="#d7e9d8" stroke="#53675b" stroke-width="3"/>
-                <circle cx="750" cy="190" r="4" fill="#73927a"/>
-                <path d="M99 77 V365 M801 77 V365" stroke="#78694f" stroke-width="9"/>
-                <path d="M88 370 H812" stroke="#78694f" stroke-width="10" stroke-linecap="round"/>
-                <path d="M81 86 H819" stroke="#78694f" stroke-width="10" stroke-linecap="round"/>
+                <ellipse cx="441" cy="499" rx="355" ry="22" fill="#26352c" opacity=".08"/>
+                <path d="M95 115 L150 70 H755 L802 115 V468 H95 Z" fill="#3e5047"/>
+                <path d="M113 129 L160 89 H742 L782 129 V450 H113 Z" fill="#e6dcca"/>
+                <path d="M160 110 H735 V384 H160 Z" fill="url(#zone-gradient)"/>
+                <path d="M113 129 L160 110 V384 L113 447 Z" fill="#ccbda3"/>
+                <path d="M735 110 L782 129 V447 L735 384 Z" fill="#c0d0c6"/>
+                <g data-feature="floor" class="diagram-part is-active">
+                  <path d="M160 384 H735 L782 447 H113 Z" fill="url(#floor-tiles)" stroke="#a99778" stroke-width="2"/>
+                  <path class="part-outline" d="M160 384 H735 L782 447 H113 Z"/>
+                  <path class="callout-line" d="M443 420 V514"/>
+                  <circle class="part-marker" cx="443" cy="514" r="18"/><text class="marker-text" x="443" y="514">7</text>
+                  <text class="part-label" x="443" y="550" text-anchor="middle">TILE OR PAPER FLOOR</text>
+                </g>
+                <g data-feature="heat" class="diagram-part">
+                  <path d="M250 165 L173 343 H337 Z" fill="url(#sun-rays)"/>
+                  <path d="M250 94 V133" stroke="#35453c" stroke-width="5"/>
+                  <path d="M233 130 H267 L284 158 H216 Z" fill="#42564b"/>
+                  <ellipse cx="250" cy="158" rx="33" ry="7" fill="#eeb663"/>
+                  <path class="part-outline" d="M210 126 H290 V172 H210 Z"/>
+                  <path class="callout-line" d="M250 130 V40"/>
+                  <circle class="part-marker" cx="250" cy="40" r="18"/><text class="marker-text" x="250" y="40">2</text>
+                  <text class="part-label" x="216" y="44" text-anchor="end">HEAT LAMP</text>
+                </g>
+                <g data-feature="uvb" class="diagram-part">
+                  <rect x="284" y="140" width="286" height="18" rx="9" fill="#526451"/>
+                  <rect x="296" y="146" width="262" height="6" rx="3" fill="#f4ffdd"/>
+                  <path d="M298 166 V203 M348 166 V203 M398 166 V203 M448 166 V203 M498 166 V203 M548 166 V203" stroke="#b3c589" stroke-width="2" stroke-dasharray="5 7" opacity=".6"/>
+                  <rect class="part-outline" x="281" y="137" width="292" height="24" rx="10"/>
+                  <path class="callout-line" d="M520 140 V40"/>
+                  <circle class="part-marker" cx="520" cy="40" r="18"/><text class="marker-text" x="520" y="40">3</text>
+                  <text class="part-label" x="550" y="44">UVB TUBE</text>
+                </g>
+                <g data-feature="platform" class="diagram-part">
+                  <path d="M188 361 L201 320 H310 L325 361 Z" fill="#877963"/>
+                  <path d="M201 320 L219 301 H294 L310 320 Z" fill="#b8a184"/>
+                  <path d="M195 341 H316 M206 326 L300 325" stroke="#d7c2a2" stroke-width="3"/>
+                  <path class="part-outline" d="M188 361 L201 320 L219 301 H294 L310 320 L325 361 Z"/>
+                  <path class="callout-line" d="M215 326 H61"/>
+                  <circle class="part-marker" cx="61" cy="326" r="18"/><text class="marker-text" x="61" y="326">5</text>
+                </g>
+                <g data-feature="branch" class="diagram-part">
+                  <path d="M410 397 C433 351 483 315 494 261 C499 237 499 218 485 199" fill="none" stroke="#78634c" stroke-width="17" stroke-linecap="round"/>
+                  <path d="M456 332 L423 307 L403 276 M490 277 L539 265 L566 236" fill="none" stroke="#927558" stroke-width="10" stroke-linecap="round"/>
+                  <path d="M412 394 C439 345 478 318 494 261" fill="none" stroke="#bea07e" stroke-width="3"/>
+                  <path class="part-outline" d="M401 398 C432 346 481 315 490 258 M455 330 L401 273 M490 277 L564 235"/>
+                  <circle class="part-marker" cx="487" cy="296" r="18"/><text class="marker-text" x="487" y="296">9</text>
+                </g>
+                <g data-feature="hides" class="diagram-part">
+                  <path d="M150 394 V369 Q150 344 178 344 H202 Q230 344 230 369 V394 Z" fill="#b29773"/>
+                  <path d="M173 394 V375 Q173 359 189 359 Q205 359 205 375 V394" fill="#4f5043"/>
+                  <path d="M628 389 V354 Q628 319 666 319 H691 Q729 319 729 354 V389 Z" fill="#9caa93"/>
+                  <path d="M652 389 V363 Q652 338 677 338 Q702 338 702 363 V389" fill="#46544a"/>
+                  <path class="part-outline" d="M150 394 V369 Q150 344 178 344 H202 Q230 344 230 369 V394 Z M628 389 V354 Q628 319 666 319 H691 Q729 319 729 354 V389 Z"/>
+                  <path class="callout-line" d="M700 343 H820"/>
+                  <circle class="part-marker" cx="820" cy="343" r="18"/><text class="marker-text" x="820" y="343">6</text>
+                </g>
+                <g data-feature="bowls" class="diagram-part">
+                  <path d="M596 408 Q601 429 629 429 Q657 429 662 408" fill="#769b9a"/>
+                  <ellipse cx="629" cy="408" rx="33" ry="10" fill="#beded8" stroke="#5d8886" stroke-width="3"/>
+                  <path d="M690 418 Q696 435 722 435 Q748 435 754 418" fill="#bb9271"/>
+                  <ellipse cx="722" cy="417" rx="32" ry="9" fill="#ead4b8"/>
+                  <path d="M707 414 L717 408 L725 416 L735 409" fill="none" stroke="#779354" stroke-width="6"/>
+                  <ellipse class="part-outline" cx="629" cy="414" rx="38" ry="19"/>
+                  <ellipse class="part-outline" cx="722" cy="422" rx="38" ry="19"/>
+                  <path class="callout-line" d="M722 435 V510"/>
+                  <circle class="part-marker" cx="722" cy="510" r="18"/><text class="marker-text" x="722" y="510">8</text>
+                </g>
+                <g data-feature="zones" class="diagram-part">
+                  <rect x="164" y="230" width="46" height="31" rx="5" fill="#44574b"/>
+                  <text x="187" y="250" class="sensor-text">32°</text>
+                  <rect x="673" y="230" width="46" height="31" rx="5" fill="#44574b"/>
+                  <text x="696" y="250" class="sensor-text">26°</text>
+                  <path d="M271 244 H630 M284 238 L271 244 L284 250 M617 238 L630 244 L617 250" fill="none" stroke="#adb69a" stroke-width="2"/>
+                  <text x="450" y="226" class="zone-caption" text-anchor="middle">WARM → COOL</text>
+                  <rect class="part-outline" x="158" y="224" width="58" height="43" rx="6"/>
+                  <rect class="part-outline" x="667" y="224" width="58" height="43" rx="6"/>
+                  <path class="callout-line" d="M719 245 H820"/>
+                  <circle class="part-marker" cx="820" cy="245" r="18"/><text class="marker-text" x="820" y="245">4</text>
+                </g>
+                <g data-feature="thermostat" class="diagram-part">
+                  <path d="M95 191 H58 V147 H242 V98" fill="none" stroke="#657b6c" stroke-width="3"/>
+                  <rect x="26" y="165" width="69" height="67" rx="8" fill="#3c5145"/>
+                  <rect x="37" y="177" width="47" height="22" rx="3" fill="#d6e8ce"/>
+                  <text x="60" y="193" class="controller-text">SET</text>
+                  <circle cx="48" cy="215" r="4" fill="#95b393"/><circle cx="73" cy="215" r="4" fill="#95b393"/>
+                  <rect class="part-outline" x="23" y="162" width="75" height="73" rx="10"/>
+                  <circle class="part-marker" cx="60" cy="130" r="18"/><text class="marker-text" x="60" y="130">10</text>
+                </g>
+                <g data-feature="enclosure" class="diagram-part">
+                  <path d="M95 115 H802 V468 H95 Z" fill="none" stroke="#3e5047" stroke-width="16" stroke-linejoin="round"/>
+                  <path d="M95 459 H802 M443 457 V470" stroke="#8b9a8b" stroke-width="3"/>
+                  <rect x="429" y="452" width="28" height="21" rx="4" fill="#d8bd80"/>
+                  <circle cx="443" cy="461" r="3" fill="#655a41"/>
+                  <path class="part-outline" d="M95 115 H802 V468 H95 Z"/>
+                  <path class="callout-line" d="M802 149 H820"/>
+                  <circle class="part-marker" cx="820" cy="149" r="18"/><text class="marker-text" x="820" y="149">1</text>
+                </g>
+                <text x="256" y="285" class="zone-caption" text-anchor="middle">BASKING</text>
+                <text x="680" y="302" class="zone-caption" text-anchor="middle">COOL HIDE</text>
+                <path d="M107 575 H791 M107 566 V583 M791 566 V583" fill="none" stroke="#9cab99" stroke-width="2"/>
+                <text x="450" y="571" class="dimension-text" text-anchor="middle">120 cm minimum length · 60 cm deep · 60 cm tall</text>
               </svg>
-              <div class="hotspot-layer" role="group" aria-label="Interactive enclosure features">
-                <button class="habitat-hotspot" style="--x: 90%; --y: 43%" type="button" aria-label="Enclosure size and security" aria-pressed="false" data-title="The enclosure" data-copy="Give an adult at least 120 × 60 × 60 cm of floor space. A sturdy, locked enclosure keeps the dragon safe from curious dogs and cats."><span>1</span></button>
-                <button class="habitat-hotspot" style="--x: 23%; --y: 31%" type="button" aria-label="Basking heat lamp" aria-pressed="false" data-title="Basking heat" data-copy="Put a basking lamp at the warm end. Use a thermostat, keep it clear of anything flammable, and check the basking surface with a temperature gun."><span>2</span></button>
-                <button class="habitat-hotspot" style="--x: 59%; --y: 25%" type="button" aria-label="UVB tube" aria-pressed="false" data-title="UVB tube" data-copy="A UVB tube is essential for healthy bones. Run it on a timer for about 10–12 hours a day, and follow the maker's distance and replacement guidance."><span>3</span></button>
-                <button class="habitat-hotspot" style="--x: 39%; --y: 57%" type="button" aria-label="Warm-to-cool temperature gradient" aria-pressed="false" data-title="Warm and cool zones" data-copy="The warm end should have 30–35°C air and the cool end 24–29°C. Let your dragon move between them; check both ends daily. Typical night guidance is 18–22°C."><span>4</span></button>
-                <button class="habitat-hotspot" style="--x: 24%; --y: 70%" type="button" aria-label="Basking platform" aria-pressed="false" data-title="Stable basking platform" data-copy="Add a sturdy, flat platform below the basking lamp so the dragon can warm itself at the right distance from the heat and UVB. Secure it so it cannot wobble or fall."><span>5</span></button>
-                <button class="habitat-hotspot" style="--x: 79%; --y: 69%" type="button" aria-label="Warm and cool hides" aria-pressed="false" data-title="A hide at each end" data-copy="Provide at least two snug hides: one on the warm side and one on the cool side. This gives your dragon a quiet place to rest without losing its temperature choices."><span>6</span></button>
-                <button class="habitat-hotspot" style="--x: 51%; --y: 83%" type="button" aria-label="Solid floor covering" aria-pressed="true" data-title="What lines the bottom?" data-copy="Use a solid, easy-to-clean floor such as ceramic tile or paper, especially for a young dragon. Avoid loose substrate that could be swallowed, and remove droppings every day."><span>7</span></button>
-                <button class="habitat-hotspot" style="--x: 74%; --y: 79%" type="button" aria-label="Water and feeding area" aria-pressed="false" data-title="Water and feeding spot" data-copy="Keep a shallow dish of fresh water at the cool end. A separate feeding spot that's easy to clean helps remove uneaten food promptly."><span>8</span></button>
-                <button class="habitat-hotspot" style="--x: 48%; --y: 47%" type="button" aria-label="Climbing branch" aria-pressed="false" data-title="Safe climbing branches" data-copy="Add stable branches or logs for climbing and enrichment. Make sure they cannot roll or tip, and keep them away from hot lamps and unsafe heights."><span>9</span></button>
-              </div>
             </div>
-            <div class="habitat-detail" aria-live="polite" aria-atomic="true">
+            <div class="habitat-detail" id="habitat-detail" aria-live="polite" aria-atomic="true">
+              <p class="eyebrow">Inside your dragon's home</p>
               <span class="detail-number" data-habitat-number>7</span>
               <div><h4 data-habitat-title>What lines the bottom?</h4><p data-habitat-copy>Use a solid, easy-to-clean floor such as ceramic tile or paper, especially for a young dragon. Avoid loose substrate that could be swallowed, and remove droppings every day.</p></div>
-              <span class="detail-hint">Try a numbered point ↑</span>
+              <p class="detail-hint">The highlighted part matches this explanation. Choose another part to explore.</p>
             </div>
+            </div>
+            <div class="habitat-controls" role="group" aria-label="Explore enclosure parts">
+              <button type="button" data-feature="enclosure" aria-pressed="false" aria-controls="habitat-detail" data-title="Space and security" data-copy="The whole enclosure should be at least 120 cm long × 60 cm deep × 60 cm tall, not just the floor area. Choose front-opening, lockable doors and a sturdy stand. Wood or PVC helps retain heat in a cold room."><span>1</span>Enclosure</button>
+              <button type="button" data-feature="heat" aria-pressed="false" aria-controls="habitat-detail" data-title="Basking heat lamp" data-copy="Place the basking lamp over the warm end, near the UVB basking area. Control it with a suitable thermostat and keep it clear of the dragon and flammable materials. Measure the basking surface with a temperature gun; 38–43°C is general adult guidance."><span>2</span>Heat lamp</button>
+              <button type="button" data-feature="uvb" aria-pressed="false" aria-controls="habitat-detail" data-title="UVB: light for healthy bones" data-copy="A UVB tube helps your dragon make vitamin D3 and absorb calcium. Provide a basking area with both heat and UVB, plus shaded places to retreat. Follow the manufacturer's mounting distance and replacement schedule; glass and some mesh can block UVB."><span>3</span>UVB tube</button>
+              <button type="button" data-feature="zones" aria-pressed="false" aria-controls="habitat-detail" data-title="Warm side, cool side" data-copy="Your dragon chooses its temperature by moving. Measure air at both ends using separate thermometers. Typical guidance is 30–35°C warm-end air, 24–29°C cool-end air, and 18–22°C at night. The 32° and 26° displays in the picture are examples, not thermostat settings."><span>4</span>Temperature zones</button>
+              <button type="button" data-feature="platform" aria-pressed="false" aria-controls="habitat-detail" data-title="A stable basking platform" data-copy="Use a flat rock or sturdy ledge beneath the basking lamp. It must support your dragon without wobbling or falling. Set its height using the heat and UVB manufacturers' safe distances, then measure its surface temperature."><span>5</span>Basking platform</button>
+              <button type="button" data-feature="hides" aria-pressed="false" aria-controls="habitat-detail" data-title="Two hides, two choices" data-copy="Give your dragon at least one hide at the warm end and another at the cool end. Both should be stable, easy to clean, and large enough to get in and out of safely. Hiding should not mean giving up the choice of temperature."><span>6</span>Warm &amp; cool hides</button>
+              <button type="button" data-feature="floor" aria-pressed="true" aria-controls="habitat-detail" data-title="What lines the bottom?" data-copy="Use a solid, easy-to-clean floor such as ceramic tile or paper, especially for a young dragon. Avoid loose substrate that could be swallowed, and remove droppings every day."><span>7</span>Floor covering</button>
+              <button type="button" data-feature="bowls" aria-pressed="false" aria-controls="habitat-detail" data-title="Water and a feeding spot" data-copy="Provide fresh water in a shallow dish at the cool end. Put greens in a separate, easy-to-clean feeding dish. Wash dishes regularly and remove uneaten food. Keep both clear of hides so your dragon can move freely."><span>8</span>Water &amp; food</button>
+              <button type="button" data-feature="branch" aria-pressed="false" aria-controls="habitat-detail" data-title="Climbing and exploring" data-copy="Secure branches or logs so they cannot roll or tip over. They provide climbing and enrichment, but must not let your dragon touch a hot lamp or get too close to the UVB tube. Keep routes to both hides clear."><span>9</span>Climbing branch</button>
+              <button type="button" data-feature="thermostat" aria-pressed="false" aria-controls="habitat-detail" data-title="Thermostat: control, then check" data-copy="Every heat source needs a suitable thermostat. Secure the probe where the equipment instructions specify and confirm temperatures independently with thermometers. A cold room may need a separate no-light night heater, also on a thermostat. Ask the store to help choose compatible equipment."><span>10</span>Thermostat</button>
+            </div>
+            <noscript><p class="diagram-note">Interactive labels need JavaScript. The habitat instructions and temperature table below explain the setup without it.</p></noscript>
             <p class="diagram-note">Illustration is a simple layout example, not to scale. Equipment distances and temperatures depend on your setup—check the manufacturer's instructions and ask an exotic-pet vet or reputable reptile store.</p>
           </div>
           <div class="habitat-layout">
